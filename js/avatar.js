@@ -7,7 +7,7 @@ window.onload = () => loadModel();
 function loadModel() {
   const loader = new GLTFLoader();
   loader.load(
-    "models/onurcatik-staying.glb",
+    "models/onurcatik-call.glb",
     (gltf) => {
       setupScene(gltf);
       document.getElementById("avatar-loading").style.display = "none";
@@ -46,7 +46,7 @@ function setupScene(gltf) {
     45,
     container.clientWidth / container.clientHeight
   );
-  camera.position.set(-1.2, 3, 1);
+  camera.position.set(-1.0, 3, 2);
 
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
@@ -98,7 +98,7 @@ scene.add(groundMesh);
   // Load animations
   const mixer = new THREE.AnimationMixer(avatar);
   const clips = gltf.animations;
-  const waveClip = THREE.AnimationClip.findByName(clips, "IdleV4.2(maya_head)");
+  const waveClip = THREE.AnimationClip.findByName(clips, "Call_Me_Clean");
   const waveAction = mixer.clipAction(waveClip);
 
   let isStumbling = false;
