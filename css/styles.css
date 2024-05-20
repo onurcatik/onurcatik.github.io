@@ -1,0 +1,351 @@
+/* General styles */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  margin: 0;
+  background: linear-gradient(0deg, #080808, #1f1e28);
+  min-height: 100vh;
+}
+
+/* Header & Navigation styles */
+header {
+  padding: 10px 0;
+  text-align: right;
+  background-color: black;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 30px;
+}
+
+/* Hover effect for navbar links */
+nav ul li a:hover {
+  color: #ff8a00;
+  /* Change to your preferred hover color */
+  transition: color 0.3s ease;
+  /* Smooth transition for the color change */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  /* Ensure all links have the same font-weight */
+  font-size: 1.5em;
+  font-family: inherit;
+  /* Ensure all links use the inherited font-family */
+}
+
+/* Section styles */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 2em;
+  font-weight: 100;
+  color: rgb(163, 163, 163);
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 24px;
+}
+
+/* Hero section styles */
+.hero {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  /* Ensure text is aligned left */
+  justify-content: flex-start;
+  /* Align items to the left */
+  align-items: flex-start;
+}
+
+.hero-title-container {
+  text-align: left;
+  /* Align text to the left */
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  /* Adjust font-weight */
+  color: #fff;
+  /* Adjust color */
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.1rem;
+  /* Decreased gap */
+  align-items: center;
+  justify-items: center;
+}
+
+
+#avatar-container {
+  height: 550px;
+  width: 250px;
+  margin: 50px 0 32px 0;
+}
+
+#avatar-loading {
+  font-size: 3em;
+}
+
+/* About section styles */
+.about-section {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: rgb(163, 163, 163);
+  margin: 0;
+}
+
+.about-image {
+  text-align: center;
+}
+
+/* Figcaption styles */
+.figcaption {
+  text-decoration: none;
+  /* Remove underline from all links */
+}
+
+/* Gallery styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+  justify-items: center;
+  /* Centers items horizontally */
+  align-items: start;
+  /* Align items to the start */
+}
+
+.gallery-item {
+  text-align: center;
+  /* Centers text within the item */
+}
+
+.gallery a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* Centers text within the figure */
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  /* Centers the image horizontally */
+  border-radius: 10px;
+  /* Add this line for rounded corners */
+}
+
+.gallery figcaption {
+  margin-top: 1rem;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  /* Centers the caption text */
+}
+
+.gallery p {
+  margin-top: 0.5rem;
+  font-size: 1em;
+  font-weight: 300;
+  color: rgb(163, 163, 163);
+  text-align: center;
+  /* Centers the paragraph text */
+}
+
+
+/* Description box styles */
+.description-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+/* GitHub button container styles */
+.github-button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.github-button:hover {
+  background-color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .content {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .content {
+    padding: 8px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black; /* Adjust the background color as needed */
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visual separation */
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.github-logo {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  fill: #ffffff;
+  /* Change this color to your desired color */
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+
+.skills-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+.skill-logo {
+  width: 60px;
+  height: 60px;
+}
