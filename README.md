@@ -1,13 +1,11 @@
 # Three.js ile Etkileşimli 3D Portföy Web Sitesi Oluşturma
 
-- Web geliştirme portföyünüzü kalabalıktan sıyrılmak için kişiselleştirilmiş bir 3D avatar ekleyerek ön plana çıkarmak mı istiyorsunuz?
-- Bu rehberde, Three.js kullanarak portföyünüze etkileşimli bir 3D avatar eklemenin adımlarını göstereceğiz.
+- Bu rehberde, Three.js kullanarak portföyünüze etkileşimli bir 3D avatar eklemenin adımlarını göstereceğim.
 - Bu rehberin sonunda şunları öğreneceksiniz:
 
 1. Avatarify kullanarak kişiselleştirilmiş 3D bir avatar oluşturma.
 2. Mixamo ve Blender kullanarak avatarınıza animasyonlar eklemek.
 3. Three.js kullanarak avatarı portföy web sitenize yerleştirme.
-4. Avatarı etkileşimli hale getirerek kullanıcının tıklamalarına yanıt verme.
 
 Hadi adım adım sürece bir göz atalım!
 
@@ -63,7 +61,7 @@ Avatar modeliniz ve animasyonlarınız hazır olduğunda, bir sonraki adıma ge�
     <div id="avatar-loading">Yükleniyor...</div>
     <!-- Portföy içeriğiniz -->
     <header>
-        <h1>Merhaba! Ben Dan Greenheck</h1>
+        <h1>Merhaba! Ben Onur Çatık</h1>
         <p>Ben interaktif 3D web deneyimleri oluşturma konusunda tutkulu bir web geliştiriciyim.</p>
     </header>
     <!-- Gerekirse daha fazla bölüm ve içerik ekleyin -->
@@ -153,3 +151,6 @@ window.onload = function () {
     loadModel();
 };
 ```
+## Teşekkürler
+
+Bu projeye ilham veren video eğitiminin yaratıcısı Coffee Code Create'e özel teşekkürler. Eğitimi [buradan](https://www.youtube.com/watch?v=p4Fk2uUnIHc) izleyebilirsiniz.
